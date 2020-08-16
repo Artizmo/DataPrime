@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.l-app {
+  font-family: 'Open Sans';
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1;
+}
+
+.l-app-header {
+  background-color: #1D1E22;
+  padding: .25em 3em;
+}
+
+.l-app-main {
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+}
+
+.l-app-main aside {
+  background-color: #24262B;
+  width: 19%;
+}
+
+.l-app-main__content {
   color: white;
+  background-color: #24262B;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.l-app-opp-section header {
+  background-color: #24262B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.l-categories {
+  padding: 0 2.5em 0 0;
+}
+
+.l-categories__category {
+  display: flex;
+  flex: 1;
+  font-size: 14pt;
+}
+
+.l-candidate-column {
+  display: flex;
+  width: 60%;
+  padding: 1em;
+  background-color: #1D1E22;
+}
+
+.category-title {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.l-candidate-column.right-align {
+  justify-content: flex-end;
+}
+
+.l-candidate-column.left-align {
+  justify-content: flex-start;
+}
+
+.l-versus-column {
+  width: 8%;
+  color: #999;
+  background-color: #3B3B3B;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.l-business-column {
+  display: flex;
+  width: 35%;
+  padding: 1em;
+  background-color: #1D1E22;
+}
+
+.MuiChip-root {
+  font-family: inherit !important;
+  font-weight: 600;
+  font-size: 10pt !important;
+  border: 1px solid #3B3B3B !important;
+  background-color: unset !important;
+}
+
+.MuiChip-label {
+  color: #ffffff;
+}
+
+.ability-chip {
+  display: flex;
+  align-items: center;
+}
+
+.ability-chip .MuiChip-root {
+  padding-right: 1em;
+}
+
+.ability-chip.leftBadge .MuiChip-root {
+  padding-right: unset;
+  padding-left: 1em;
+}
+
+.ability-chip svg {
+  position: relative;
+  margin-left: -20px;
+}
+
+.ability-chip svg.leftBadge {
+  position: relative;
+  margin-left: unset;
+  margin-right: -20px;
+}
+
+.l-app-header__section {
+  padding: .5em 0;
+}
+
+.l-section__toolbar {
+  padding: 1em 0;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+}
+
+.breadcrumbs {
+  color: #999;
+}
+
+.action {
+  font-size: 12pt;
+  color: #17a6ed;
+}
+
+.title {
+  color: #fff;
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+button {
+  text-transform: unset !important;
+}
+
+button.wide {
+  padding-right: 10em;
+  padding-left: 10em;
+}
+
+button.default {
+  color: #fff;
+  background-color: #3F4143;
+}
+
+button.primary {
+  color: #fff;
+  background-color: #17a6ed;
+}
+
+button.clear {
+  color: #fff;
+  background-color: unset;  
+  border: 1px solid #3F4143;
+}
+
+.MuiSvgIcon-root.default {
+  color: #999;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.modal-header {
+  color: #fff;
+}
+
+.modal-body {
+  padding: 16px;
+  color: #fff;
+}
+
+.modal-dialog .MuiPaper-rounded {  
+  background-color: inherit;
+}
+
+.modal-footer {
+  color: #fff;
+}
+
+.form-label {
+  color: #999;
+  padding: .75em 0;
+}
+
+.form-component {
+  font-family: inherit;
+  font-weight: 500;
+  border: 2px solid #999;
+  border-radius: 6px;
+  background-color: unset;
+  color: #999;
+  outline: none;
+  padding: .75em;
+  width: 100%;
+  box-sizing: border-box;
 }
