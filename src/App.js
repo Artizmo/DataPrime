@@ -1,5 +1,5 @@
 import React from 'react';
-import Category from './Category';
+import Category from './components/category';
 import Button from '@material-ui/core/Button';
 import PersonIcon from '@material-ui/icons/Person';
 import Modal from './components/modal';
@@ -50,6 +50,7 @@ function App() {
       <section className="l-app-main">
         <aside />
         <div className="l-app-main__content">
+          {/* I'm approaching this as if there are other categories to a job positing */}
           <Category />
         </div>
       </section>

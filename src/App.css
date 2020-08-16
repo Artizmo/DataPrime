@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+/* 
+Note: These styles are definitely clumped together. Ideally, they should be separated out
+in their own files accordingly. Also, the l-styles are a notation I like for describing
+layouts (paddings, margins, flex, etc). They really shouldn't have styles changing color
+or fonts, etc. But given the time contraints, I put it all together.
+*/
+
 .l-app {
   font-family: 'Open Sans';
   display: flex;
@@ -171,45 +178,4 @@ button.clear {
 
 .MuiSvgIcon-root.default {
   color: #999;
-}
-
-.modal-content {
-  width: 500px;
-  background-color: #000;
-  border-radius: 5px;
-}
-
-.modal-header {
-  color: #fff;
-}
-
-.modal-body {
-  padding: 16px;
-  color: #fff;
-}
-
-.modal-dialog .MuiPaper-rounded {  
-  background-color: inherit;
-}
-
-.modal-footer {
-  color: #fff;
-}
-
-.form-label {
-  color: #999;
-  padding: .75em 0;
-}
-
-.form-component {
-  font-family: inherit;
-  font-weight: 500;
-  border: 2px solid #999;
-  border-radius: 6px;
-  background-color: unset;
-  color: #999;
-  outline: none;
-  padding: .75em;
-  width: 100%;
-  box-sizing: border-box;
 }

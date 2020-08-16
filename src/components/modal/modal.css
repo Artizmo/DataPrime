@@ -1,0 +1,40 @@
+.modal-content {
+  width: 500px;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.modal-header {
+  color: #fff;
+}
+
+.modal-body {
+  padding: 16px;
+  color: #fff;
+}
+
+.modal-dialog .MuiPaper-rounded {  
+  background-color: inherit;
+}
+
+.modal-footer {
+  color: #fff;
+}
+
+.form-label {
+  color: #999;
+  padding: .75em 0;
+}
+
+.form-component {
+  font-family: inherit;
+  font-weight: 500;
+  border: 2px solid #999;
+  border-radius: 6px;
+  background-color: unset;
+  color: #999;
+  outline: none;
+  padding: .75em;
+  width: 100%;
+  box-sizing: border-box;
+}
